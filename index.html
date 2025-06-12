@@ -1,0 +1,97 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The University of All Universes</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      text-align: center;
+    }
+    header {
+      padding: 2rem;
+    }
+    img.logo {
+      width: 180px;
+      border-radius: 50%;
+    }
+    h1 {
+      font-size: 2.2rem;
+      margin-top: 1rem;
+    }
+    h2 {
+      font-weight: normal;
+      color: #cce7ff;
+    }
+    .language-toggle {
+      margin-top: 1rem;
+    }
+    main {
+      padding: 2rem;
+    }
+    .contact {
+      margin-top: 2rem;
+      padding: 1rem;
+      background: rgba(255,255,255,0.05);
+      border-radius: 10px;
+    }
+    .footer {
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+    button {
+      background-color: #ffffff22;
+      border: none;
+      color: white;
+      padding: 0.5rem 1rem;
+      margin: 0.5rem;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+    button:hover {
+      background-color: #ffffff44;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="badge.png" alt="University Badge" class="logo" />
+    <h1 id="title">The University of All Universes</h1>
+    <h2 id="subtitle">Wisdom for All Worlds</h2>
+    <div class="language-toggle">
+      <button onclick="toggleLanguage('en')">English</button>
+      <button onclick="toggleLanguage('zh')">中文</button>
+    </div>
+  </header>  <main>
+    <p id="mission">Empowering students, teachers, and seekers to create, learn, and thrive across all realities.</p>
+    <div class="contact">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:theuniverseuniversity@hotmail.com" style="color:#aaddff;">theuniverseuniversity@hotmail.com</a></p>
+      <p>WeChat: enlightmentre</p>
+    </div>
+  </main>  <div class="footer">
+    © 2025 The University of All Universes. All rights reserved.
+  </div>  <script>
+    const translations = {
+      en: {
+        title: "The University of All Universes",
+        subtitle: "Wisdom for All Worlds",
+        mission: "Empowering students, teachers, and seekers to create, learn, and thrive across all realities."
+      },
+      zh: {
+        title: "万宇大学",
+        subtitle: "智慧共享世界",
+        mission: "我们让学生、教师和寻道者能够创造、学习并在各个环境中精彩律动。"
+      }
+    };
+    function toggleLanguage(lang) {
+      document.getElementById('title').innerText = translations[lang].title;
+      document.getElementById('subtitle').innerText = translations[lang].subtitle;
+      document.getElementById('mission').innerText = translations[lang].mission;
+    }
+  </script></body>
+</html>
